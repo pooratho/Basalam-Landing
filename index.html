@@ -9,21 +9,117 @@
 
   <body class="bg-white font-sans min-h-screen flex flex-col">
     <header
-      class="w-full bg-white/90 backdrop-blur-md border-b border-gray-300 top-0 z-50 shadow-sm"
+      class="w-full bg-white/90 backdrop-blur-md border-b border-gray-300 sticky top-0 z-50"
     >
-      <div class="w-full">
+      <div class="w-full px-8">
         <div
-          class="py-4 flex justify-between items-center border-b border-gray-300"
+          class="py-4 flex justify-between items-center gap-4 border-b border-gray-300"
         >
-          <div class="px-4">
-            <span>[بخش هدر و منو]</span>
+          <div class="flex items-center gap-6 flex-grow">
+            <a
+              href="#"
+              class="font-black text-2xl text-gray-900 tracking-tighter"
+            >
+              باسلام
+            </a>
+
+            <button
+              class="flex items-center gap-2 text-gray-700 hover:text-orange-500 text-sm text-bold font-medium transition-colors"
+            >
+              <span class="text-lg text-bold">☰</span>
+              <span>دسته‌بندی‌ها</span>
+            </button>
+
+            <div class="relative flex-grow">
+              <input
+                type="text"
+                placeholder="جستجو در باسلام"
+                class="w-full bg-gray-200 hover:bg-gray-200/60 border border-transparent focus:border-gray-400 rounded-lg py-3.5 pr-12 pl-12 text-sm outline-none transition-all"
+              />
+              <div
+                class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer hover:text-gray-600"
+              >
+                <span>📷</span>
+              </div>
+              <div
+                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 cursor-pointer hover:text-gray-600"
+              >
+                <span>🔍</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-8 text-sm text-gray-600 pr-5">
+            <button class="flex flex-col items-center gap-1 transition-colors">
+              <span>📍</span>
+              <div
+                class="flex items-center gap-1 hover:text-orange-500 cursor-pointer"
+              >
+                <span>انتخاب شهر</span>
+                <span class="text-xs">▼</span>
+              </div>
+            </button>
+            <a
+              href="#"
+              class="flex flex-col items-center gap-1 hover:text-orange-500 transition-colors"
+            >
+              <span>💬</span>
+              <span>گفت‌وگوها</span>
+            </a>
+            <div class="flex flex-col items-center gap-1 cursor-pointer">
+              <span>👤</span>
+              <div
+                class="flex items-center gap-1 hover:text-orange-500 cursor-pointer"
+              >
+                <span>عضویت</span>
+                <span class="text-gray-300">|</span>
+                <span>ورود</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="flex flex-col items-center gap-1 relative p-2 hover:text-orange-500 transition-colors"
+            >
+              <span class="text-xl">🛒</span>
+              <span class="text-sm">سبد خرید</span>
+              <span
+                class="absolute -top-1 -right-1 bg-orange-500 text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold"
+                >۰</span
+              >
+            </a>
+            <a
+              href="#"
+              class="border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-4 py-2 rounded-xl font-medium transition-all flex items-center gap-2"
+            >
+              <span>🏪</span>
+              <span>ایجاد غرفه</span>
+            </a>
           </div>
         </div>
-
-        <div class="py-3 flex items-center gap-6 text-sm text-gray-500">
-          <div class="px-4">
-            <span>[بخش منوهای زیرین]</span>
-          </div>
+        <div
+          class="py-5 flex items-center gap-8 text-sm text-gray-600 overflow-x-auto scrollbar-none"
+        >
+          <a
+            href="#"
+            class="hover:text-orange-600 font-bold flex items-center gap-1"
+            >گلد</a
+          >
+          <a
+            href="#"
+            class="hover:text-orange-600 font-medium flex items-center gap-1"
+            >طلای آنلاین</a
+          >
+          <a
+            href="#"
+            class="hover:text-orange-500 transition-colors flex items-center gap-1"
+            >خرید اعتباری <span>▼</span></a
+          >
+          <a href="#" class="hover:text-orange-500 transition-colors"
+            >خرید عمده</a
+          >
+          <a href="#" class="hover:text-orange-500 transition-colors"
+            >خرید سازمانی</a
+          >
         </div>
       </div>
     </header>
@@ -93,7 +189,8 @@
     </main>
 
     <footer
-      class="w-full bg-white border-t border-gray-200 mt-12 text-gray-700">
+      class="w-full bg-white border-t border-gray-200 mt-12 text-gray-700"
+    >
       <span>[بخش فوتر]</span>
     </footer>
   </body>
