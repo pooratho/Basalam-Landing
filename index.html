@@ -7,20 +7,89 @@
     <link rel="stylesheet" href="./css/output.css" />
   </head>
 
-  <body class="bg-gray-50 font-sans">
+  <body class="bg-white font-sans min-h-screen flex flex-col">
     <header
-      class="bg-white/90 backdrop:backdrop-blur-md border-b border-gray-200 sticky top-0 z-50"
+      class="w-full bg-white/90 backdrop-blur-md border-b border-gray-300 top-0 z-50 shadow-sm"
     >
-      <div
-        class="container mx-auto px-4 py-7.5 flex justify-between items-center gap-4 max-w-7xl border-b border-gray-200"
-      >
-        [بخش هدر و منو]
-      </div>
-      <div
-        class="container mx-auto px-4 py-3 flex justify-between items-center gap-4 max-w-7xl"
-      >
-        [بخش منوهای زیرین]
+      <div class="w-full">
+        <div
+          class="py-4 flex justify-between items-center border-b border-gray-300"
+        >
+          <div class="px-4">
+            <span>[بخش هدر و منو]</span>
+          </div>
+        </div>
+
+        <div class="py-3 flex items-center gap-6 text-sm text-gray-500">
+          <div class="px-4">
+            <span>[بخش منوهای زیرین]</span>
+          </div>
+        </div>
       </div>
     </header>
+
+    <main class="w-full flex-grow flex flex-col space-y-4">
+      <section
+        class="w-full bg-white p-4 shadow-sm flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[بخش استوری‌ها و میانبرها]</span>
+      </section>
+
+      <section
+        class="relative w-full bg-white p-4 shadow-sm flex items-center overflow-hidden h-72 md:h-[380px] border-b border-gray-300"
+      >
+        <span>[بخش بنرهای تبلیغاتی]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 grid grid-cols-5 md:grid-cols-10 items-center gap-6 border-b border-gray-300"
+      >
+        <span>[بخش دسته‌بندی‌ها]</span>
+      </section>
+
+      <section class="w-full px-4 md:px-8 py-2">
+        <div
+          class="w-full bg-[#fff5f0] rounded-3xl p-6 shadow-sm flex flex-col gap-4"
+        >
+          <span>[بخش هیجان‌انگیز]</span>
+        </div>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[بخش محصولات ویژه]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[بخش چی بخرم]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[پیشنهاد امروز]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[تخفیف غرفه‌دار]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[غرفه‌های تازه نفس]</span>
+      </section>
+
+      <section
+        class="w-full bg-white p-4 flex items-center gap-6 overflow-x-auto scrollbar-none border-b border-gray-300"
+      >
+        <span>[میانبرها و دسته‌بندی‌ها]</span>
+      </section>
+    </main>
   </body>
 </html>
