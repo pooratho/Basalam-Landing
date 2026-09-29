@@ -1,1 +1,26 @@
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Vazirmatn", system-ui, -apple-system, sans-serif;
+
+  --color-basalam-orange: #f9593a;       
+  --color-basalam-orange-hover: #e64a19;    
+  --color-basalam-rust: #d9531e;         
+  --color-basalam-red: #ff5722;         
+
+  --color-basalam-gray-bg: #fdf2eb;       
+  --color-basalam-yellow: #fca311;      
+  --color-basalam-pink: #fde2d0;         
+  
+  --color-basalam-card-yellow: #fff8f0;      
+  --color-basalam-card-gray: #f7f7f8;        
+  --color-basalam-card-amber: #fff9ed;       
+}
+
+@utility scrollbar-none {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
